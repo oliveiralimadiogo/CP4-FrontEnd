@@ -1,0 +1,51 @@
+:root{
+  --eco-green: #28a745;
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  background: #f7f9f8;
+}
+
+.navbar .nav-link{
+  font-weight: 500;
+}
+
+.section-title{
+  font-weight: 600;
+}
+
+.category-card{
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.category-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.08);
+}
+
+.card .price{
+  font-weight: 600;
+  color: var(--eco-green);
+}
+
+.badge-eco{
+  background: #e6f4ea;
+  color: #1f8e3d;
+  border: 1px solid #c8e8d1;
+}
+
+.product-thumb{
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border .2s ease;
+}
+
+.product-thumb:hover{ border-color: var(--eco-green); }
+
+.offcanvas{ --bs-offcanvas-width: 420px; }
+@media (max-width: 480px){ .offcanvas{ --bs-offcanvas-width: 100vw; } }
